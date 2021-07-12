@@ -1,0 +1,155 @@
+#page-auth {
+    display: flex;
+    align-items:stretch; //quer que todos elelentos estiquem pra caber no espaço total
+    height: 100vh;
+
+    aside {
+        flex: 7;
+
+        background-color: #835afd;
+        color: #fff;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 100px 70px;
+
+        img {
+            max-width: 300px;
+        }
+
+        strong {
+            font: 700 32px 'Poppins', sans-serif; 
+            line-height: 36px;
+            margin-top: 12px;
+
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 26px;
+            margin-top: 12px;
+            color: #f8f8f8;
+        }
+    }
+
+    main { 
+        flex: 8;
+
+        padding: 0 28px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        align-items: stretch; //quer q todos elementos estiquem pra caber na largura total de 300px
+        text-align: center;
+
+        > img { //excluir o imgda regra stchetch
+            align-self: center; //deixar apenas a imagem como center, não stretch
+        }
+
+        h2 {
+            font-size: 22px;
+            margin: 60px 0 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        form {
+            input {
+                height: 44px;
+                border-radius: 8px;
+                padding: 0 12px;
+                background: #fff;
+                border: 1px solid #a8a8b3;
+            }
+
+            
+
+            button {
+                margin-top: 14px;
+            }
+
+            button, input {
+                width: 100%;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            color: #737380;
+            margin-top: 16px;
+
+            a {
+                color: #e559f9;
+            }
+        }
+    }
+
+    .create-room {
+        margin-top: 44px;
+        height: 44px;
+        border-radius: 8px;
+        font-weight: 500;
+        background: #ea4335;
+        color: #fff;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+        border: 0;
+
+        transition: 0.2s;
+
+        img {
+            margin-right: 8px;
+        }
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
+
+    
+
+
+    .separator {   //linha separadora 
+        font-size: 14px;
+        color: #a8a8b3;
+
+        margin: 28px 0;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #a8a8b3;
+            margin-right: 14px;
+        }
+
+        &::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #a8a8b3;
+            margin-left: 14px;
+        }
+    }
+
+  
+
+}
+

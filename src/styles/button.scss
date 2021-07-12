@@ -1,0 +1,38 @@
+
+.button {
+    // margin-top: 54px;
+    height: 45px;
+    border-radius: 8px;
+    font-weight: 500;
+    background: #835afd;
+    color: #fff;
+    padding: 0 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    border: 0;
+
+    transition: 00.2s;
+
+    img {
+        margin-right: 8px;
+    }
+
+    &.outlined { //quando este botão estiver com classe outlined
+        background: #fff;
+        border: 1px solid;
+        color: #835afd;
+    }
+
+    &:not(:disabled):hover {  // apenas aplicar o efeito hover se botão NÂO estiver desabilitado
+        filter: brightness(0.9);
+    }
+
+    &:disabled {  //&:not(:disabled):hover
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
